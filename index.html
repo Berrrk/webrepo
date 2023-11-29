@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödev-1</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        h2{
+            text-align: center;
+        }
+        form{
+            width: 500px;
+            margin: 0 auto;
+        }
+        fieldset{
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        legend{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        table{
+            width: 100%;
+        }
+        td{
+            padding: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"]{
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="radio"]{
+            width: 20px;
+        }
+        select{
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="submit"]{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #eee;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h2>Aşağıdaki Formu Doldurunuz.</h2>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <table>
+                <tr>
+                    <td>Adınız:</td>
+                    <td><input type="text" name="ad"></td>
+                </tr>
+                <tr>
+                    <td>Soyadınız:</td>
+                    <td><input type="text" name="soyad"></td>
+                </tr>
+                <tr>
+                    <td>Cinsiyetiniz:</td>
+                    <td>
+                        <input type="radio" name="cinsiyet" value="erkek">Erkek
+                        <input type="radio" name="cinsiyet" value="kadın">Kadın
+                    </td>
+                </tr>
+                <tr>
+                    <td>Yaşınızı Giriniz:</td>
+                    <td><input type="number" name="yas"></td>
+                </tr>
+                <tr>
+                    <td>Yaşadığınız Şehir:</td>
+                    <td>
+                        <select name="sehir">
+                            <option value="istanbul">İstanbul</option>
+                            <option value="ankara">Ankara</option>
+                            <option value="izmir">İzmir</option>
+                            <option value="antalya">Antalya</option>
+                            <option value="konya">Konya</option>
+                            <option value="kayseri">Kayseri</option>
+                            <option value="samsun">Samsun</option>
+                            <option value="trabzon">Trabzon</option>
+                            <option value="diyarbakır">Diyarbakır</option>
+                            <option value="gaziantep">Gaziantep</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Doğum Tarihiniz:</td>
+                    <td>
+                        <select name="gun">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <select name="ay">
+                            <option value="O">Ocak</option>
+                            <option value="S">Şubat</option>
+                            <option value="M">Mart</option>
+                        </select>
+                        <select name="yil">
+                            <option value="00">2000</option>
+                            <option value="01">2001</option>
+                            <option value="02">2002</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mail Adresiniz:</td>
+                    <td><input type="email" name="mail"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Şifre Alanı</legend>
+            <table>
+                <tr>
+                    <td>Şifrenizi Giriniz:</td>
+                    <td>
+                        <input type="password" name="sifre">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Şifre Tekrar:</td>
+                    <td>
+                        <input type="password" name="sifreTekrar">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Tamam">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
