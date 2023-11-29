@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulama-3</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        fieldset {
+            background-color: #eeeeee;
+        }
+        legend {
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+            
+        }
+        button {
+            padding: 5px 10px;
+            background-color: gray;
+            color: white;
+            border-radius: 20px;
+            font-size: 18px;
+            margin: 10px;
+        }
+        #usernameid{
+            border-radius: 20px;
+            height: 25px;
+            width: auto;
+            font-weight: 600;
+            transition: 2s;
+            margin-left: 10px;
+            
+        }
+        #passwdid{
+            border-radius: 20px;
+            width: auto;
+            height: 25px;
+            transition: 2s;
+            margin-left: 70px;
+        }
+        label {
+            text-transform: initial;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+        button:hover{
+            color: black;
+            transform: rotateX(10);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="sablon.html">Şablon</a></li>
+            <li><a href="uygulama-1.html">Uygulama-1</a></li>
+            <li><a href="uygulama-2.html">Uygulama-2</a></li>
+            <li><a href="uygulama-3.html">Uygulama-3</a></li>
+            <li><a href="uygulama-4.html">Uygulama-4</a></li>
+        </ul>
+    </nav>
+    <form action="#" method="post" >
+        <fieldset>
+            <legend align="center" width="500px">Giriş Sayfası</legend>
+            <label>Kullanıcı Adı:</label>
+            <input type="text" name="username" id="usernameid">
+            <br><br>
+            <label>Şifre:</label>
+            <input type="password" name="passwd" id="passwdid">
+            <br><br>
+            <button type="submit">Gönder</button>
+            <button type="reset">Gönder Gelsin</button>
+        </fieldset>
+    </form>
+</body>
+</html>

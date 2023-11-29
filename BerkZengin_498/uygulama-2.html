@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uygulama-2</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="sablon.html">Şablon</a></li>
+            <li><a href="uygulama-1.html">Uygulama-1</a></li>
+            <li><a href="uygulama-2.html">Uygulama-2</a></li>
+            <li><a href="uygulama-3.html">Uygulama-3</a></li>
+            <li><a href="uygulama-4.html">Uygulama-4</a></li>
+        </ul>
+    </nav>
+    <form action="" method="get">
+        <table>
+            <tr>
+                <td>Ad:</td>
+                <td>
+                    <input type="text" name="ad" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Soyad:</td>
+                <td>
+                    <input type="text" name="soyad" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Yaş:</td>
+                <td>
+                    <input type="number" name="yas" placeholder="Yaşını Gir" min="18">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Resim Ekle:
+                </td>
+                <td>
+                    <input type="file" name="dosya">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tc No:
+                </td>
+                <td>
+                    <input type="text" name="tcno" maxlength="11" minlength="11" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Cinsiyet:</td>
+                <td>
+                    K <input type="radio" name="posta1" checked> / E <input type="radio" name="posta1">
+                </td>
+            </tr>
+            <tr>
+                <td>Yabancı Diller:</td>
+                <td>
+                       İngilizce <input checked type="checkbox" name="ing">
+                    Fransızca <input type="checkbox" name="france">
+                    Japonca <input type="checkbox" name="japan">
+                </td>
+            </tr>
+            <tr>
+                <td>Görüş</td>
+                <td>
+                    <textarea name="gorus" cols="30" rows="10" readonly>Görüşleriniz Daha Sonra Alınmayacaktır.</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Kaydet</button>
+                    <button type="reset">Temizle</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
